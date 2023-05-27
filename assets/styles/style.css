@@ -1,0 +1,600 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Lily+Script+One&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    /* вернуться сюда */
+    box-sizing: border-box;
+    /* outline: none; */
+    /* border: none; */
+    font-family: "Open Sans", sans-serif;
+}
+
+body {
+    height: 100vh;
+}
+
+.script {
+    font-family: "Kaushan Script", sans-serif;
+}
+
+header {
+    background: rgb(255, 122, 21);
+}
+
+.display-flex {
+    display: flex;
+}
+
+.container {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.wrapper {
+    flex-wrap: wrap;
+}
+
+.jc-center {
+    justify-content: center;
+}
+
+.jc-end {
+    justify-content: flex-end;
+}
+
+.jc-between {
+    justify-content: space-between;
+}
+
+.jc-around {
+    justify-content: space-around;
+}
+
+.grid {
+    display: grid;
+}
+
+
+/* авторизация */
+
+.section-auth {
+    background: url(../imgs/1593740620_19-p-foni-v-stile-flat-27.jpg);
+    background-size: cover;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.section-auth form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 0 auto;
+    background-color: #eee;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 30px white;
+}
+
+.section-auth form h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: rgb(255, 132, 0);
+}
+
+.section-auth form label {
+    color: rgb(255, 132, 0);
+    margin-bottom: 5px;
+}
+
+.section-auth form input {
+    padding: 10px;
+    margin-bottom: 30px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color: rgb(255, 218, 218);
+}
+
+.section-auth form button {
+    transition: 1s;
+    padding: 10px;
+    width: 50%;
+    align-self: center;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color: rgb(255, 132, 0);
+    color: white;
+    cursor: pointer;
+}
+
+.section-auth form button:hover {
+    transition: .5s;
+    background-color: rgb(211, 110, 1);
+    text-shadow: 0 0 10px white;
+    transform: scale(1.05);
+    border: 2px solid orangered;
+}
+
+
+
+header .row {
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .row .logo {
+    width: 6%;
+}
+
+header .row .logo img {
+    width: 100%;
+}
+
+header .row .navigation ul {
+    display: flex;
+    list-style-type: none;
+    height: 100%;
+}
+
+header .row .navigation ul a {
+    transition: 1s;
+    color: white;
+    text-decoration: none;
+    padding: 0 40px;
+    height: 50px;
+    background: rgb(255, 122, 21);
+    display: flex;
+    align-items: center;
+}
+
+header .row .navigation ul li:hover a {
+    transition: .5s;
+    background: rgb(255, 83, 21);
+    transform: translateY(10px);
+}
+
+.section-welcome {
+    background: #eee;
+    padding: 120px 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.686), rgba(95, 0, 0, 0.686)), url(https://catherineasquithgallery.com/uploads/posts/2021-02/1612938996_33-p-krasnii-multyashnii-fon-50.jpg);
+    background-size: cover;
+}
+
+.section-welcome h1 {
+    font-size: 4.5rem;
+    text-align: center;
+    width: 50%;
+    margin: 50px auto 100px auto;
+    font-weight: 900;
+    color: rgb(255, 122, 21);
+}
+
+.section-welcome h3 {
+    font-size: 1rem;
+    text-align: center;
+    width: 70%;
+    margin: 0 auto 100px auto;
+    font-weight: 300;
+    color: #bcbcbc;
+}
+
+.section-welcome a {
+    transition: 1s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 50px;
+    width: 50px;
+    border: 2px solid rgb(255, 122, 21);
+    border-radius: 50%;
+    margin: 0 auto;
+
+    color: white;
+    text-decoration: none;
+}
+
+.section-welcome a:hover {
+    transition: .5s;
+    background-color: #bcbcbc65;
+}
+
+.section-welcome a:hover:active {
+    background-color: #00000065;
+    color: white;
+    border: 2px solid rgb(255, 255, 255);
+}
+
+
+/* здесь стили для заголовка блоков  */
+.title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 70px 15%;
+    color: #333;
+}
+
+.title h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.title h2 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.title .line {
+    height: 2px;
+    width: 10%;
+    background-color: rgb(211, 110, 1);
+    margin-bottom: 20px;
+}
+
+.title p {
+    font-size: .8rem;
+    color: #555;
+    text-align: center;
+}
+
+.section-services .item {
+    display: flex;
+    width: 30%;
+    border-radius: 10px;
+    box-shadow: 0 0 20px #bcbcbcd1;
+    padding: 20px;
+}
+
+.section-services .text {
+    padding-left: 20px;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+}
+
+.section-services .text h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.section-services .text {
+    font-size: 0.75em;
+}
+
+.section-services .icon {
+    color: rgb(157, 255, 222);
+    font-size: 1.5rem;
+}
+
+.section-services .wrapper .line {
+    width: 100%;
+    height: 2px;
+    background-color: #ddd;
+    margin: 10px 0;
+}
+
+
+
+/* Факты */
+.section-facts {
+    margin-top: 60px;
+    background-color: rgb(157, 255, 222);
+}
+
+.section-facts .item {
+    width: 20%;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px 0;
+    color: white;
+    border-left: 1px solid white;
+}
+
+.section-about {
+    margin-top: 50px;
+    margin-bottom: 200px;
+}
+
+.section-about .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.section-about .container .item {
+    width: 32%;
+    height: 200px;
+    background-color: rgb(185, 243, 223);
+}
+
+.section-about .container .item .bg-img {
+    background-image: url(https://images.unsplash.com/photo-1542435503-956c469947f6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80);
+    height: 100%;
+}
+
+.section-about .container .item:hover .bg-img {
+    transition: .5s;
+    transform: translate(-10px, -10px);
+}
+
+.section-about .container .item .fg-gradient {
+    background-image: linear-gradient(rgba(255, 0, 0, 0.7), rgba(255, 166, 0, 0.7));
+    height: 100%;
+    opacity: 0;
+}
+
+.section-about .container .item:hover .fg-gradient {
+    transition: .5s;
+    opacity: 100%;
+}
+
+.section-grid .grid {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 0 40px;
+}
+
+.section-grid .grid .item {
+    background-color: white;
+    box-shadow: 0 0 10px rgb(163, 163, 163);
+    border-radius: 10px;
+    padding: 15px;
+    position: relative;
+}
+
+.section-grid .grid .icon {
+    width: 30%;
+    padding: 2%;
+    background-color: rgb(172, 240, 217);
+    border-radius: 10px;
+    margin-top: -40px;
+}
+
+.section-grid .grid .txt {
+    text-align: justify;
+    color: #333;
+}
+
+.section-grid .grid .txt p {
+    font-size: 12px;
+}
+
+.section-grid .grid .txt h2 {
+    font-size: 28px;
+    color: rgb(0, 0, 67);
+}
+
+.section-grid .grid .item:nth-child(1) {
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.section-grid .grid .item:nth-child(2) {
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+
+.section-grid .grid .item:nth-child(3) {
+    grid-row-start: 3;
+    grid-row-end: 5;
+    grid-column-start: 3;
+}
+
+.section-grid .grid .item:nth-child(4) {
+    grid-row-start: 4;
+    grid-row-end: 6;
+    grid-column-start: 4;
+}
+
+.section-grid .grid .item>img {
+    position: absolute;
+    top: 30px;
+    right: -150px;
+}
+
+
+
+
+
+
+.slide .hider{
+    overflow: hidden;
+}
+.slide .hider .image-line{
+    width: 300%;
+    display: flex;
+    height: 600px;
+}
+.slide .hider .image-line .image{
+    position: relative;
+    width: calc(100%/3);
+    height: 100%;
+}
+.section-carousrel .image-line .image{
+    animation: carousel 15s infinite alternate ease-in-out;
+}
+.slide .hider .image-line .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.slide .hider .image-line .image .txt{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: #000000ad;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+@keyframes carousel {
+    0%, 20%{
+        transform: translateX(0);
+    }
+    30%, 70%{
+        transform: translateX(-100%);
+    }
+    80%,100%{
+        transform: translateX(-200%);
+    }
+}
+.section-slider input{
+    display: none;
+}
+#slide1:checked ~ .image-line .image{
+    transition: .5s;
+    transform: translateX(0);
+}
+#slide2:checked ~ .image-line .image{
+    transition: .5s;
+    transform: translateX(-100%);
+}
+#slide3:checked ~ .image-line .image{
+    transition: .5s;
+    transform: translateX(-200%);
+}
+.section-slider .hider{
+    position: relative;
+}
+.section-slider .labels{
+    width: 150px;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    z-index: 1;
+    bottom: 25%;
+    left: 50%;
+    transform: translateX(-75px);
+}
+.section-slider .labels label{
+    transition: .5s;
+    width: 30px;
+    height: 15px;
+    opacity: 0.8;
+    background-color: #bcbcbc;
+    border-radius: 15px;
+    border: black 2px solid;
+}
+#slide1:checked ~ .labels label:nth-child(1){
+    transition: .5s;
+    width: 60px;
+    background-color: #3030ee;
+}
+#slide2:checked ~ .labels label:nth-child(2){
+    transition: .5s;
+    width: 60px;
+    background-color: #3030ee;
+}
+#slide3:checked ~ .labels label:nth-child(3){
+    transition: .5s;
+    width: 60px;
+    background-color: #3030ee;
+}
+header .row .navigation input{
+    display: none;
+}
+header .row .navigation label{
+    display: none;
+}
+@media screen and (max-width: 900px){
+    .container{
+        width: 100%;
+    }
+    header .container{
+        height: 80px;
+    }
+    header .row{
+        display: flex;
+        
+    }
+    header .row .navigation{
+        display: flex; 
+        flex-direction: column;
+        align-items: end;
+    }
+    #burger_button:checked ~ ul{
+        display: flex;
+        background: rgba(0, 0, 0, 0.698);
+    }
+    header .row .navigation label{
+        display: flex; 
+        flex-direction: column;
+        align-items: end;
+        padding-right: 38px;
+    }
+    header .row .navigation ul{
+        display: none;
+        flex-direction: column;
+    }
+    header .row .navigation img{
+        width: 10%;
+    }
+    .section-welcome h1{
+        font-size: 3rem;
+        margin: 40px 0;
+        text-align: center;
+        width: 100%;
+    }
+    .title > h2{
+        text-align: center;
+    }
+    .section-services .item{
+        width: 90%;
+        margin: 20px 0;
+    }
+    .section-services .line{
+        display: none;
+    }
+    .section-services .wrapper{
+        justify-content: center;
+    }
+    .section-facts .container{
+        flex-direction: column;
+    }
+    .section-facts .item{
+        display: flex;
+        width: 100%;
+        border-bottom: 2px solid white;
+    }
+    .section-about .container{
+        flex-direction: column;
+        padding: 20px;
+    }
+    .section-about .container .item{
+        width: 100%;
+        margin: 20px 0;
+    }
+    .section-grid .grid{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 40px 20px;
+    }
+    .section-slider .labels{
+        bottom: 35%;
+    }
+    .section-grid .grid .item:nth-child(1){
+        grid-row: 1/2;
+        grid-column: 1/2;
+    }
+    .section-grid .grid .item:nth-child(2){
+        grid-row: 1/2;
+        grid-column: 2/3;
+    }
+    .section-grid .grid .item:nth-child(3){
+        grid-row: 2/3;
+        grid-column: 1/2;
+    }
+    .section-grid .grid .item:nth-child(4){
+        grid-row: 2/3;
+        grid-column: 2/3;
+    }
+    .section-grid .grid .item > img{
+        display: none;
+    }
+
+}
